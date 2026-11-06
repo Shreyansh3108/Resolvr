@@ -1,0 +1,46 @@
+{
+  "name": "resolvr-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=\"--dns-result-order=ipv4first\" tsx watch server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@prisma/client": "^6.19.3",
+    "@qdrant/js-client-rest": "^1.19.0",
+    "axios": "^1.21.0",
+    "bcryptjs": "^3.0.3",
+    "cohere-ai": "^8.1.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "groq-sdk": "^1.5.0",
+    "multer": "^2.3.0",
+    "pdf-extraction": "^1.0.2",
+    "svix": "^2.5.0",
+    "undici": "^7.30.0",
+    "uuid": "^14.0.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.2.0",
+    "@types/node": "^26.2.0",
+    "@types/uuid": "^10.0.0",
+    "cross-env": "^10.1.0",
+    "nodemon": "^3.1.14",
+    "prisma": "^6.19.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
